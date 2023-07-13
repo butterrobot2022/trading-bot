@@ -6,7 +6,7 @@ import tensorflow as tf
 
 from sklearn.model_selection import train_test_split
 
-EPOCHS = 20
+EPOCHS = 30
 IMG_WIDTH = 30
 IMG_HEIGHT = 30
 NUM_CATEGORIES = 3
@@ -87,7 +87,7 @@ def get_model():
     model = tf.keras.models.Sequential([
     # Convolutional layer. Learn 32 filters using a 3x3 kernel
     tf.keras.layers.Conv2D(
-        32, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
+        32, (2,2), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
     ),
 
     # Max-pooling layer, using 2x2 pool size
@@ -97,9 +97,9 @@ def get_model():
     tf.keras.layers.Flatten(),
 
     # Add a hidden layer with dropout
-    tf.keras.layers.Dense(384, activation="relu"),
+    tf.keras.layers.Dense(640, activation="relu"),
     # tf.keras.layers.Dense(384, activation="relu"),
-    tf.keras.layers.Dropout(0.3),
+    tf.keras.layers.Dropout(0.6),
 
     # Add an output layer with output units for all 10 digits
     tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
