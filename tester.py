@@ -265,8 +265,8 @@ class Strat(TrailingStrategy):
                     fig, axes = mpf.plot(df.tail(75), type='candle', volume=True, returnfig=True, style=style)
 
                     # Save the figure to a file
-                    fig.savefig('candlestick_chart.png')
-                    if process_image('/Users/motin/Downloads/traffic/traffic/candlestick_chart.png') == 2:
+                    fig.savefig('candlestick.png')
+                    if process_image('/Users/motin/Downloads/traffic/traffic/candlestick.png') == 2:
                         levels = get_fibonacci_levels(df=df.tail(75), trend='uptrend')
                         thirty_eight_retracement = levels[2]
                         sixty_one8_retracement = levels[4]
@@ -309,8 +309,8 @@ class Strat(TrailingStrategy):
                     fig, axes = mpf.plot(df.tail(75), type='candle', volume=True, returnfig=True, style=style)
 
                     # Save the figure to a file
-                    fig.savefig('candlestick_chart.png')
-                    if process_image('/Users/motin/Downloads/traffic/traffic/candlestick_chart.png') == 0: 
+                    fig.savefig('candlestick.png')
+                    if process_image('/Users/motin/Downloads/traffic/traffic/candlestick.png') == 0: 
                         levels = get_fibonacci_levels(df=df.tail(75), trend='downtrend')
                         thirty_eight_retracement = levels[2]
                         sixty_one8_retracement = levels[4]
