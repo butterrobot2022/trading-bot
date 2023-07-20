@@ -249,7 +249,6 @@ class Strat(TrailingStrategy):
                 price = self.data.Close[-1]
                 risk_amount = self.equity * self.risk_percentage
                 reward_amount = self.equity * self.reward_percentage
-                r2r_ratio = reward_amount / risk_amount
 
                 tp_level = price + (reward_amount/self.equity)
                 sl_level = price - (risk_amount/self.equity)
