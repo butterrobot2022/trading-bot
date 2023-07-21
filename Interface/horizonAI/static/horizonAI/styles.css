@@ -1,0 +1,200 @@
+.ai-name {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.sign-out {
+    /* position: relative; */
+    /* justify-content: right; */
+    /* margin-left: 1000px; */
+    margin-top: 25px;
+}
+
+.collapse {
+    justify-content: right;
+}
+
+.side-navs {
+    margin-top: 50px;
+    margin-left: 50px;
+    /* color: ; */
+    width: 40%;
+    position: fixed;
+    /* animation: scroll-up 2s ease-in 2s forwards; */
+    transition: all 2s;
+}
+
+.side-navs .scroll-up {
+    transform: translateY(-200px);
+}
+
+.side-navs .scroll-down {
+    transform: translateY(0);
+}
+
+
+.side-navs a h6 {
+    margin-top: 45px;
+}
+
+
+.side-navs a {
+    color:black;
+    text-decoration: none;
+}
+
+.whole-body {
+    display: flex;
+    /* position: absolute; */
+}
+
+.books {
+    /* text-align: center; */
+    /* margin-left: 50px; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* margin-right: 250px; */
+    position: absolute;
+    margin-left: 300px;
+}
+
+.list-books {
+    /* margin-right: 100px; */
+    /* display: flex; */
+    /* margin-left: 100px; */
+    margin-top: 10px;
+
+}
+
+.books-title {
+    margin-left: 200px;
+}
+
+.main-book-content {
+    display: flex;
+    /* gap: -80px; */
+    /* justify-content: space-between; */
+}
+
+
+.searchbar {
+    width: 300px;
+    margin-left: 120px;
+    /* position: absolute; */
+}
+
+.title-book {
+    text-decoration: none;
+    /* margin-right: -50px; */
+}
+
+
+.wordbase {
+    /* margin-left: 100px; */
+    margin-top: 50px;
+    margin-right: 300px;
+}
+
+.dictionary {
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    /* margin-l: 150px; */
+    /* flex-shrink: 0; */
+    position: absolute;
+    margin-left: 300px;
+}
+
+.top-header {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.dict-title {
+    margin-left: 125px;
+}
+
+
+.journal-header {
+    margin-top: 50px;
+}
+
+.journal-entry {
+    margin-top: 150px;
+    margin-left: -400px;
+    width: 50%;
+    /* height: 50px; */
+}
+
+#personalJournal {
+    /* width: 100%; */
+    height: 350px;
+}
+
+.save-entry-button {
+    /* justify-content: right; */
+    margin-top: 10px;
+    /* margin-left: 550px; */
+    margin-bottom: 20px;
+}
+
+.journal-entries {
+    margin-top: 150px;
+    margin-left: -350px;
+    width: 50%;
+}
+
+.date-created-journal {
+    margin-left: 400px;
+}
+
+.journal-topic-heading {
+    display: flex;
+    gap: 10px;
+}
+.new-journal-link {
+    text-decoration: none;
+    margin-left: 250px;
+}
+
+.returned-books {
+    margin-top: 30px;
+}
+
+.show-term {
+    margin-top: 30px;
+}
+
+.books-header {
+    margin-left: 100px;
+}
+
+
+.waitlist-div {
+    margin-top: 150px;
+    margin-left: 325px;
+}
+
+.explanation {
+    margin-right: 330px;
+}
+
+.waitlist-email {
+     width: 60%;
+}
+
+.waitlist-email-input {
+    height: 60px;
+}
+
+.join-waitlist-button {
+    height: 60px;
+}
+
+.journal-title {
+    margin-bottom: 15px;
+}
+
+.journal {
+    margin-left: 250px;
+}

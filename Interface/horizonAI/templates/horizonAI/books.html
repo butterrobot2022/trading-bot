@@ -1,0 +1,127 @@
+{% extends 'layout.html' %}
+{% block title %}Books{% endblock %}
+{% block body %}
+    <div class="books">
+        <div class="books-header">
+        <h2 class="books-title">Books</h2>
+        <div class="searchbar">
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded" id="search-input" placeholder="Search (bookname or category)" aria-label="Search" aria-describedby="search-addon" onkeyup="searchBooks()" />
+                <!-- <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span> -->
+            </div>
+            <div class="returned-books">
+            <div class="searched-books" style="display: none;">
+
+            </div>
+        </div>
+        </div>
+        
+        </div>  
+        <div class="main-book-content">
+         <div class="list-books">
+            <h6 id="psychology-category">Trading Psycology</h6>
+            <div id="psychology-books">
+                <ul>
+                    <li>
+                        <a href="#" class="title-book">Trading in the Zone by Mark Douglas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The Pysycology of Trading by Brett N. Steenbarger</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Market Mind Games by Denise Shull</a>
+                    </li>
+                   
+                </ul>
+            </div>
+                <h6 id="technical-category">Technical Analysis</h6>
+                <div id="technical-books">
+                <ul>
+                    <li>
+                        <a href="#" class="title-book">Technical Analysis of the Financial Markets by John J. Murphy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Japanese Candelstick Charting Techniques by Steve Nison</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Charting and Technical Analysis by Fred Mcallen</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The Encyclopedia of Chart Patterns by Thomas N. Bulkwosi</a>
+                    </li>
+                   
+                </ul>
+            </div>
+                <h6 id="fundamental-category">Fundamental Analysis</h6>
+                <div id="fundamental-books">
+                <ul>
+                    <li>
+                        <a href="#" class="title-book">The Intelligent Investor by Benjamin Graham</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Security Analysis by Benjamin Graham and David Dodd</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">A Random Walk Down Wall Street by Burton G. Malkiel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The Little Book of Valuation by Aswath Damodaran</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Financial Statement Analysis by Martin S. Fridson and Fernando Alvarez</a>
+                    </li>
+                   
+                </ul>         
+            </div>
+        </div>
+        <div class="list-books">
+            <h6 id="strategies-category">Trading Strategies and Systems</h6>
+            <div id="strategies-books">
+            <ul>
+                <li>
+                    <a href="#" class="title-book">Reminscence of a Stock Operator by Edwin Lefevre</a>
+                </li>
+                <li>
+                    <a href="#" class="title-book">How to Make Money in Stocks by William J. O'Neil</a>
+                </li>
+                <li>
+                    <a href="#" class="title-book">Market Wizard by Jack D. Schwager</a>
+                </li>
+                <li>
+                    <a href="#" class="title-book">Systematic Trading: A Unique New Method for Designing Trading and Investing Systems by Robert Carver.</a>
+                </li>
+                <li>
+                    <a href="#" class="title-book">Trend Following by Michael W. Covel</a>
+                </li>
+               
+            </ul>
+        </div>
+                <h6 id="risk-category">Risk Management and Money Management</h6>
+                <div id="risk-books">
+                <ul>
+                    <li>
+                        <a href="#" class="title-book">Trade Your Way to Financial Freedom by Van K. Tharp</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The Mathematics of Money Management by Ralph Vince</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The New Trading for a Living by Alexander Elder</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">The Complet TurtleTrader by Michael Cover</a>
+                    </li>
+                    <li>
+                        <a href="#" class="title-book">Money Management Strategies for Serious Traders by Davide Biocchi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+<script src="/static/horizonAI/books.js"></script>
+{% endblock %}

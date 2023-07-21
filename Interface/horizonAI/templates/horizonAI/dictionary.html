@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block title %}Dictionary{% endblock %}
+{% block body %}
+<div class="dictionary"> 
+    <div class="top-header">
+        <h2 class="dict-title">Market Dictionary</h2>
+      <div class="searchbar">
+      <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="Search market terms" aria-label="Search" aria-describedby="search-addon"/>
+          <!-- <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span> -->
+        </div>
+      </div> 
+      </div>
+      <div class="show-term">
+
+      </div>
+      <div class="all-words">
+    <div class="wordbase">
+        <ul>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Bull Market:</b><p>A market characterized by rising prices and investor optimisim. It is a period when the overall market trend is upward,
+                    and investors have confidence in the future.
+                </p>
+                </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Bear Market:</b><p>A market characterized by falling prices and pessimism among investors. It is a period when the overall market trend
+                     is downward, and investors expect further declines.
+                </p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Volatility:</b><p>The measure of how much the price of a financial instrument fluctuates over time. Higher volatility indicates larger price swings, while lower volatility suggests more stable prices.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Bid-Ask Spread:</b><p>The difference between the highest price a buyer is willing to pay(bid) and the lowest prie a seller is willing to accept(ask) for a particular security.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Market Order:</b><p>An order to buy or sell a security at the current market price.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Limit Order:</b><p>An order to buy or sell a security at a specific price or better.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Stop Loss:</b><p>A predefined price level set by an investor to limit potential losses on a trade if the market moves against them.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">P/E Ratio:</b><p>A valuation ratio that compares a company's current stock price to its per-share earnings. It helps investors assess the company's relative value and potential growth.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Dividend:</b><p>A portion of a company's earnings that is distributed to its shareholders on a per-share basis.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Short Selling:</b><p>A trading strategy where an investor borrows shares of a security and sells them, anticipating that the price will decrease. The 
+                    investor later buys back the shares at a lower price to return them to the lender, making a profit from the price difference.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Blue Chip Stocks:</b><p>Shares of large, well-established, and financialy stable companies with a history of reliable performance.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">IPO (Initial Public Offering):</b><p>The first sale of a company's shares to the public, allowing the company to raise capital from outside investors.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">Market Cap (Market Capitalization):</b><p>The total value of a company's outstanding shares of stock, calculated by the number of outstanding shares.</p>
+            </div>
+            </li>
+            <li>
+                <div class="word-def">
+                <b class="wordname">ETF (Exchange-Traded Fund):</b><p>A type of investment fund that is traded on stock exchanges, representing a diversified portfolio of assets, such as stocks, bonds, or commodities.</p>
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="static/horizonAI/dictionary.js"></script>
+{% endblock %}
+
