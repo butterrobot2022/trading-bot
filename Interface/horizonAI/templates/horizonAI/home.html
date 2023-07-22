@@ -13,21 +13,21 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <!-- <li class="nav-item">
+               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li> -->
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#" style="color: white;">Sign Up</a>
-              </li>
+              </li> -->
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Get started today</a>
               </li> -->
 
-            </ul>
-            <a href="{% url 'horizonAI:dictionary' %}"><button class="btn btn-primary">Get started today</button></a>
-          </div>
+            <!-- </ul>  -->
+            <!-- <a href="{% url 'horizonAI:dictionary' %}"><button class="btn btn-primary">Get started today</button></a> -->
+          <!-- </div> -->
         </div>
       </nav>
       <div class="waitlist-div">
@@ -42,9 +42,71 @@
             <button class="btn btn-primary join-waitlist-button">Join Waitlist</button>
         </div>
     </form>
-    
     </div>
+    <div class="features-div">
+      <h3>Features</h3>
+      <div class="features-offered">
+      <div class="feature">  
+      <p class="feature-names">Trading History Analytics</p>
+      <img class="feature-image" src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW5hbHl0aWNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="analytics">
+      <p class="feature-explanation">We keep track of your financial history to give you an overview of how you are performing.</p>
+    </div>
+    <div class="feature">
+      <p class="feature-names">Personal Journal</p>
+      <img class="feature-image" src="https://images.unsplash.com/photo-1538045698727-ac45d4365100?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8am91cm5hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="personaljournal">
+      <p class="feature-explanation">Have your own personal journal to record what you've learnt.</p>
+    </div>
+    <div class="feature">
+      <p class="feature-names">Books</p>
+      <img class="feature-image" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="books">
+      <p class="feature-explanation">A mini-library of books to learn and grow from.</p>
+    </div>
+    </div>
+    <div class="features-offered">
+      <div class="feature">  
+      <p class="feature-names">Personalized Chatbot</p>
+      <img class="feature-image" src="https://images.unsplash.com/photo-1682202338526-b7bb45524b10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fENoYXRib3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="chatbot">
+      <p class="feature-explanation">A personalized Chatbot to assist you in your journey.</p>
+    </div>
+    <div class="feature">
+      <p class="feature-names">AI Assistant</p>
+      <img class="feature-image" src="https://th.bing.com/th/id/OIP.3HuE71LEkfta2mNINiB-4QHaEN?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt="personaljournal">
+      <p class="feature-explanation">Currently in production, Livingston (an AI) is an intelligent assistant to assist you in your trading and analysis.</p>
+    </div>
+    <div class="feature">
+      <p class="feature-names">Market Dictionary</p>
+      <img class="feature-image" src="https://images.unsplash.com/photo-1583361704493-d4d4d1b1d70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="books">
+      <p class="feature-explanation">A dictionary to help you lookup market terms.</p>
+    </div>
+    </div>
+    </div>
+    <footer class="landing-page-footer">
+      <h4 class="contacts">Contact Details</h4>
+      <div class="contact-details">
+          <p>Email: motingwetlotlo@yahoo.com</p>
+          <p>Phone Number: +27 84 731 6417</p>
+          <form class="bottom-waitlist-form">
+          <button class="btn btn-primary join-waitlist-button2" id="join-waitlist">Join Waitlist</button>
+        </form>
+      </div>
+  </footer>
     <script src="static/horizonAI/home.js"></script>
 </body>
+
+<script>
+
+  // alert('I am working.')
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.feature');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>  
 
 </html>

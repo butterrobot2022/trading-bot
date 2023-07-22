@@ -34,7 +34,7 @@ def join_waitlist(request):
             if not SignUp.objects.filter(email=email).exists():
                 signup = SignUp(email=email)
                 signup.save()
-                return JsonResponse({'message': 'Success'})
+                return JsonResponse({'message': 'Successfully added email!'})
             else:
                 return JsonResponse({'message': 'Email already exists'})
 

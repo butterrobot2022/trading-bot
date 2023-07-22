@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
+    const form = document.querySelector('.bottom-waitlist-form');
+
+    form.addEventListener('click', function(event) {
+        // Prevent the default link behavior
+        event.preventDefault();
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+    });
     const waitlistForm = document.querySelector('.waitlist-email');
     const emailInput = document.querySelector('.waitlist-email-input');
 
@@ -31,4 +40,5 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('An error occurred while processing your request.');
         });
     });
+    
 });
