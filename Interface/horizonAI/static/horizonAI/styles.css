@@ -4,7 +4,7 @@
 }
 
 /* CSS for mobile devices */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     .details {
         width: 500px;
         margin-right: 300px;
@@ -38,18 +38,7 @@
     .feature-explanation {
         margin-right: 100px;        
     }
-}
-
-  
-
-
-
-
-.waitlist-div {
-    margin-top: 150px;
-    margin-left: 275px;
-    text-align: left;
-}
+} */
 
 .explanation {
     margin-right: 330px;
@@ -67,13 +56,6 @@
     width: 150px;
 }
 
-
-.features-div {
-    margin-top: 150px;
-    text-align: center;
-}
-
-
 .features-offered {
     display: flex;
     margin-left: 100px;
@@ -84,16 +66,10 @@
 
 
 .feature-image {
-    width: 175px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     border-radius: 7px;
-    margin-bottom: 100px;
-}
-
-.feature-explanation {
-    text-align: left;
-    margin-left: 50px;
-    margin-top: -50px;
+    margin-bottom: 10px;
 }
 
 .feature {
@@ -105,6 +81,9 @@
 }
 
 .feature.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
@@ -119,29 +98,13 @@
 } 
 
 .landing-page-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background-color: black;
     color: white;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    
+    padding: 20px 10px;
 }
-
-.contact-details {
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-left: 475px;
-    text-align: left;
-}
-
-.join-waitlist-button2 {
-    width: 35%;
-}
-
-.contacts {
-    padding-top: 50px;
-    text-align: center;
-}
-
 
 .waitlist-nav {
     height: 300px;
@@ -162,135 +125,208 @@
 .list-books div {
     margin-left: 40px;
 }
-    .journal-title {
-        margin-bottom: 15px;
+.journal-title {
+margin-bottom: 15px;
+}
+
+.journal {
+margin-left: 250px;
+}
+.books-title {
+    margin-left: 200px;
+}
+
+.main-book-content {
+    display: flex;
+}
+
+
+.searchbar {
+    width: 300px;
+    margin-left: 120px;
+}
+
+.title-book {
+    text-decoration: none;
+}
+
+
+.wordbase {
+    margin-top: 50px;
+    margin-right: 300px;
+}
+
+.dictionary {
+    margin-bottom: 50px;
+    position: absolute;
+    margin-left: 300px;
+}
+
+.top-header {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.dict-title {
+    margin-left: 125px;
+}
+
+
+.journal-header {
+    margin-top: 50px;
+}
+
+.journal-entry {
+    margin-top: 150px;
+    margin-left: -400px;
+}
+
+#personalJournal {
+    height: 350px;
+}
+
+.save-entry-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.journal-entries {
+    margin-top: 150px;
+    margin-left: -350px;
+    width: 50%;
+}
+
+.date-created-journal {
+    margin-left: 400px;
+}
+
+.journal-topic-heading {
+    display: flex;
+    gap: 10px;
+}
+.new-journal-link {
+    text-decoration: none;
+    margin-left: 250px;
+}
+
+.returned-books {
+    margin-top: 30px;
+}
+
+.show-term {
+    margin-top: 30px;
+}
+
+.books-header {
+    margin-left: 100px;
+    .sign-out {
+        margin-top: 25px;
     }
     
-    .journal {
-        margin-left: 250px;
+    .collapse {
+        justify-content: right;
     }
-        .books-title {
-            margin-left: 200px;
-        }
-        
-        .main-book-content {
-            display: flex;
-        }
-        
-        
-        .searchbar {
-            width: 300px;
-            margin-left: 120px;
-        }
-        
-        .title-book {
-            text-decoration: none;
-        }
-        
-        
-        .wordbase {
-            margin-top: 50px;
-            margin-right: 300px;
-        }
-        
-        .dictionary {
-            margin-bottom: 50px;
-            position: absolute;
-            margin-left: 300px;
-        }
-        
-        .top-header {
-            margin-top: 30px;
-            margin-left: 50px;
-        }
-        
-        .dict-title {
-            margin-left: 125px;
-        }
-        
-        
-        .journal-header {
-            margin-top: 50px;
-        }
-        
-        .journal-entry {
-            margin-top: 150px;
-            margin-left: -400px;
-        }
-        
-        #personalJournal {
-            height: 350px;
-        }
-        
-        .save-entry-button {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .journal-entries {
-            margin-top: 150px;
-            margin-left: -350px;
-            width: 50%;
-        }
-        
-        .date-created-journal {
-            margin-left: 400px;
-        }
-        
-        .journal-topic-heading {
-            display: flex;
-            gap: 10px;
-        }
-        .new-journal-link {
-            text-decoration: none;
-            margin-left: 250px;
-        }
-        
-        .returned-books {
-            margin-top: 30px;
-        }
-        
-        .show-term {
-            margin-top: 30px;
-        }
-        
-        .books-header {
-            margin-left: 100px;
-            .sign-out {
-                margin-top: 25px;
-            }
-            
-            .collapse {
-                justify-content: right;
-            }
-            
-            .side-navs {
-                margin-top: 50px;
-                margin-left: 50px;
-                position: fixed;
-                transition: all 2s;
-            }
-            
-            .side-navs .scroll-up {
-                transform: translateY(-200px);
-            }
-            
-            .side-navs .scroll-down {
-                transform: translateY(0);
-            }
-            
-            
-            .side-navs a h6 {
-                margin-top: 45px;
-            }
-            
-            
-            .side-navs a {
-                color:black;
-                text-decoration: none;
-            }
-            
-            .whole-body {
-                display: flex;
-            }
-        }
+    
+    .side-navs {
+        margin-top: 50px;
+        margin-left: 50px;
+        position: fixed;
+        transition: all 2s;
+    }
+    
+    .side-navs .scroll-up {
+        transform: translateY(-200px);
+    }
+    
+    .side-navs .scroll-down {
+        transform: translateY(0);
+    }
+    
+    
+    .side-navs a h6 {
+        margin-top: 45px;
+    }
+    
+    
+    .side-navs a {
+        color:black;
+        text-decoration: none;
+    }
+    
+    .whole-body {
+        display: flex;
+    }
+}
+
+/* ++++++++ */
+.waitlist-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 10vw;
+}
+
+.features-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features-div p {
+    margin-top: 1rem;
+}
+
+.img-cover {
+    width: 100%;
+    height: 250px;
+}
+
+/* Changes Made */
+
+@media only screen and (min-width: 600px) {
+    .features-div {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .landing-page-footer {
+        align-items: center;
+    } 
+}
+
+.new-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 20px 0 250px;
+}
+
+.new-entry .datetime {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.new-entry input {
+    border-radius: 0;
+}
+
+.tags-display {
+    display: flex;
+    gap: 10px;
+}
+
+.tags-display div {
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tags-display div i {
+    cursor: pointer;
+}
